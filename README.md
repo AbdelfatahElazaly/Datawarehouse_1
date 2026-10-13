@@ -21,3 +21,9 @@ Datawarehouse_1/
 ├── docs/              # Data models, Star Schema diagrams, and architecture details
 ├── scripts/           # SQL scripts for ETL processing, transformations, and views
 └── README.md          # Project overview and documentation
+```
+## ☕ Stay Connected
+
+Let's stay in touch! Feel free to connect with me on LinkedIn:
+
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdelfatah-elazaly-235b39300/)
