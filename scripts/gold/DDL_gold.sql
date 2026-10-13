@@ -17,8 +17,8 @@ Usage:
 -- =============================================================================
 -- Create Dimension: gold.dim_customer
 -- =============================================================================
-IF OBJECT_ID('gold.dim_customer', 'V') IS NOT NULL
-    DROP VIEW gold.dim_customer;
+IF OBJECT_ID('gold.dim_customers', 'V') IS NOT NULL
+    DROP VIEW gold.dim_customers;
 GO
 CREATE VIEW gold.dim_customer AS
 	(SELECT
@@ -85,7 +85,7 @@ SELECT
 	sd.sls_quantity AS quantity,
 	sd.sls_price AS price
 FROM silver.crm_sales_details SD
-LEFT JOIN GOLD.dim_customer CU
+LEFT JOIN GOLD.dim_customers CU
 ON SD.sls_cust_id = CU.customer_id
 LEFT JOIN gold.dim_products PR
 ON SD.sls_prd_key = PR.product_number
